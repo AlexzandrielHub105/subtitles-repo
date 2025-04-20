@@ -1,14 +1,13 @@
 {
-    "version": 2,
-    "builds": [
-      {
-        "src": "api/index.js",
-        "use": "@vercel/node"
-      }
-    ],
-    "routes": [
-      { "src": "/manifest.json", "dest": "/api/index.js" },
-      { "src": "/subtitles", "dest": "/api/index.js" }
-    ]
-  }
-  
+  "version": 2,
+  "builds": [
+    {
+      "src": "api/index.js",
+      "use": "@vercel/node"
+    }
+  ],
+  "routes": [
+    { "src": "/manifest.json", "dest": "/api/index.js" },
+    { "src": "/subtitles", "dest": "/api/index.js" }
+  ]
+}
